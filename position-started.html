@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Product Showcase</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    height: 2000px; /* add scroll to observe fixed */
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .product-card {
+    position: relative; /* for absolute child */
+    width: 300px;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px #aaa;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .sale-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 25px;
+  z-index: 1;
+  font-size: 15;
+  }
+  
+  .product-title {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  
+  .product-description {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .product-price {
+  position: relative;
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+  left: 10px;
+  }
+  
+  #chat-button {
+  position: fixed;
+  color: white;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 18px;
+  background-color: lightgreen;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: Arial;
+  }
+
+  #chat-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<div class="product-card" background-color="red">
+  <div class="sale-badge">SALE</div>
+  <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg" alt="Product Image">
+  <div class="product-title">Stylish Sneakers</div>
+  <div class="product-description">Comfortable and trendy sneakers perfect for daily wear.</div>
+  <div class="product-price">$49.99</div>
+</div>
+
+<a href="#" id="chat-button">Chat With Us</a>
+
+</body>
+</html>
